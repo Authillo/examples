@@ -1,10 +1,10 @@
-// import { Authillo } from "@authillo/backend-js";
+import { Authillo } from "@authillo/backend-js";
 import * as bodyParser from "body-parser";
 const express = require("express");
 const app = express();
 const port = 3000;
 
-// Authillo.initialize({ clientId: "myClientId", clientSecret: "myClientSecret", jwtKey: "myJwtKey" });
+Authillo.initialize({ clientId: "myClientId", clientSecret: "myClientSecret", jwtKey: "myJwtKey" });
 
 app.use(
 	(
