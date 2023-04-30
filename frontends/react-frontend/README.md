@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# React Frontend Integrated with Authillo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a sample React App integrated with Authillo. It provides examples for both Authillo's standard sign in flow, as well as the embedded flow. More information on both flows can be found in the [Authillo documentation](https://authillo.com/developer).
+
+## Getting Started
+
+Note: the implementation of this sample app is not meant to be production ready. It is meant to be a simple example of how to integrate Authillo with a React app.
+
+To get started, clone this repository and run npm install to install the dependencies.
+
+Finally, to run the app, run npm start in the frontend folder and npm run server in the backend folder. The frontend should now be running on http://localhost:3001 with the backend running on http://localhost:5001.
+
+# info on this particular react app
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). We also used a typescript template for this react app creation
 
 ## Available Scripts
 
