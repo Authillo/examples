@@ -31,7 +31,11 @@ app.get("/codechallenge", (req, res) => {
 // TOKEN REQUEST & USER INFO STEP
 app.get("/codeResponse", async (req, res) => {
 	const code = req.query.code as string;
-	const tokenResponse = await Authillo.tokenRequest(code, "", codeVerifierStoredInMockDatabase);
+	const tokenResponse = await Authillo.tokenRequest(
+		code,
+		"my redirect_uri",
+		codeVerifierStoredInMockDatabase
+	);
 	if (tokenResponse.result.succeeded) {
 		const userInfo = await Authillo.getUserInfo(tokenResponse.result.feedback.access_token);
 		console.log("retrieved the following info about the user", JSON.stringify(userInfo));
